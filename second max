@@ -1,0 +1,9 @@
+A = input().split(',')
+for i in range(len(A)): 
+ A[i] = int(A[i])
+second_max = A[0]
+for i in range(len(A)):
+ if A[i]>second_max and A[i]!=max(A): 
+  second_max=A[i]
+if second_max!=max(A): print(second_max)
+else: print("NO")
