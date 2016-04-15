@@ -1,0 +1,10 @@
+a = input().split(',')
+for i in range(len(a)): 
+ a[i] = int(a[i])
+def slope(x1,y1,x2,y2):
+ return (y2-y1)/(x2-x1)
+ 
+if slope(a[0],a[1],a[2],a[3]) == slope(a[4],a[5],a[6],a[7]):
+ print("YES")
+else:
+ print("NO")
